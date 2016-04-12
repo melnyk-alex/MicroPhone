@@ -35,12 +35,6 @@ class PlaySoundViewController: UIViewController {
     override func viewWillAppear(animated: Bool) {
         configureUI(.NotPlaying)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
     
     @IBAction func playSoundForButton(sender: UIButton) {
         switch (ButtonType(rawValue: sender.tag)!) {
@@ -60,6 +54,7 @@ class PlaySoundViewController: UIViewController {
         
         configureUI(.Playing)
     }
+    
     @IBAction func stopButtonPresed(sender: AnyObject) {
         stopAudio()
     }

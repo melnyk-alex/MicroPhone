@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  RecordSoundViewController.swift
 //  MicroPhone
 //
 //  Created by Human on 4/12/16.
@@ -23,11 +23,6 @@ class RecordSoundViewController: UIViewController, AVAudioRecorderDelegate {
         stopButton.enabled = false
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
     @IBAction func startRecording(sender: AnyObject) {
         stopButton.enabled = true
         recordingButton.enabled = false
@@ -37,7 +32,6 @@ class RecordSoundViewController: UIViewController, AVAudioRecorderDelegate {
         let recordingName = "recordedVoice.wav"
         let pathArray = [dirPath, recordingName]
         let filePath = NSURL.fileURLWithPathComponents(pathArray)
-        print(filePath)
         
         let session = AVAudioSession.sharedInstance()
         try! session.setCategory(AVAudioSessionCategoryPlayAndRecord)
@@ -60,9 +54,8 @@ class RecordSoundViewController: UIViewController, AVAudioRecorderDelegate {
     }
     
     func audioRecorderDidFinishRecording(recorder: AVAudioRecorder, successfully flag: Bool) {
-        print("Did finished")
         if (flag) {
-            self.performSegueWithIdentifier("stopRecording", sender: audioRecorder.url)
+            performSegueWithIdentifier("stopRecording", sender: audioRecorder.url)
         } else {
             print("Wooops...")
         }
