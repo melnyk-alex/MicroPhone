@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		6551ABDB1CBCD41A00E4E130 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6551ABDA1CBCD41A00E4E130 /* AppDelegate.swift */; };
-		6551ABDD1CBCD41A00E4E130 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6551ABDC1CBCD41A00E4E130 /* ViewController.swift */; };
+		6551ABDD1CBCD41A00E4E130 /* RecordSoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6551ABDC1CBCD41A00E4E130 /* RecordSoundViewController.swift */; };
 		6551ABE01CBCD41A00E4E130 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6551ABDE1CBCD41A00E4E130 /* Main.storyboard */; };
 		6551ABE21CBCD41A00E4E130 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6551ABE11CBCD41A00E4E130 /* Assets.xcassets */; };
 		6551ABE51CBCD41A00E4E130 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6551ABE31CBCD41A00E4E130 /* LaunchScreen.storyboard */; };
 		6551ABF01CBCD41A00E4E130 /* MicroPhoneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6551ABEF1CBCD41A00E4E130 /* MicroPhoneTests.swift */; };
 		6551ABFB1CBCD41B00E4E130 /* MicroPhoneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6551ABFA1CBCD41B00E4E130 /* MicroPhoneUITests.swift */; };
+		6551AC091CBCDDAF00E4E130 /* PlaySoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6551AC081CBCDDAF00E4E130 /* PlaySoundViewController.swift */; };
+		6551AC0B1CBCE2DA00E4E130 /* PlaySoundViewController+Audio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6551AC0A1CBCE2DA00E4E130 /* PlaySoundViewController+Audio.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,7 @@
 /* Begin PBXFileReference section */
 		6551ABD71CBCD41A00E4E130 /* MicroPhone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MicroPhone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6551ABDA1CBCD41A00E4E130 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6551ABDC1CBCD41A00E4E130 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6551ABDC1CBCD41A00E4E130 /* RecordSoundViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordSoundViewController.swift; sourceTree = "<group>"; };
 		6551ABDF1CBCD41A00E4E130 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6551ABE11CBCD41A00E4E130 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6551ABE41CBCD41A00E4E130 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +49,8 @@
 		6551ABF61CBCD41B00E4E130 /* MicroPhoneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MicroPhoneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6551ABFA1CBCD41B00E4E130 /* MicroPhoneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MicroPhoneUITests.swift; sourceTree = "<group>"; };
 		6551ABFC1CBCD41B00E4E130 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6551AC081CBCDDAF00E4E130 /* PlaySoundViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaySoundViewController.swift; sourceTree = "<group>"; };
+		6551AC0A1CBCE2DA00E4E130 /* PlaySoundViewController+Audio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PlaySoundViewController+Audio.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +102,9 @@
 			isa = PBXGroup;
 			children = (
 				6551ABDA1CBCD41A00E4E130 /* AppDelegate.swift */,
-				6551ABDC1CBCD41A00E4E130 /* ViewController.swift */,
+				6551ABDC1CBCD41A00E4E130 /* RecordSoundViewController.swift */,
+				6551AC081CBCDDAF00E4E130 /* PlaySoundViewController.swift */,
+				6551AC0A1CBCE2DA00E4E130 /* PlaySoundViewController+Audio.swift */,
 				6551ABDE1CBCD41A00E4E130 /* Main.storyboard */,
 				6551ABE11CBCD41A00E4E130 /* Assets.xcassets */,
 				6551ABE31CBCD41A00E4E130 /* LaunchScreen.storyboard */,
@@ -259,7 +265,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6551ABDD1CBCD41A00E4E130 /* ViewController.swift in Sources */,
+				6551ABDD1CBCD41A00E4E130 /* RecordSoundViewController.swift in Sources */,
+				6551AC0B1CBCE2DA00E4E130 /* PlaySoundViewController+Audio.swift in Sources */,
+				6551AC091CBCDDAF00E4E130 /* PlaySoundViewController.swift in Sources */,
 				6551ABDB1CBCD41A00E4E130 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
